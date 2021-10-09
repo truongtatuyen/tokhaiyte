@@ -10,6 +10,34 @@
 .w-100{width: 100%!important;}
 .w-50{width: 50%!important;}
 .hidden{display: none!important;}
+
+input[type="text"], 
+input[type="number"], 
+input[type="email"],
+input[type="date"],
+select,
+textarea{
+    font-size: 14px;
+    color: #555;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    padding: 7px 0 7px 7px;
+    border-radius: 4px;
+    width: calc(100% - 10px)!important;
+    margin-bottom: 20px;
+}
+input[type="radio"],
+input[type="checkbox"]{
+    margin-bottom: 20px;
+}
+textarea{
+    max-width: calc(100% - 10px)!important;
+}
+.sub_title b,
+td > label{
+    display: inline-block;
+    margin-bottom: 10px;
+}
 /* END GENERAL */
 
 /* STYLE */
@@ -17,6 +45,7 @@ body{
     background-color: lightgoldenrodyellow;
 }
 #bigWrapper{
+    min-width: 768px!important;
     background: white;
     padding: 30px 10px 20px;
     border: 1px solid #ddd;
@@ -49,5 +78,86 @@ body{
     display: inline-block;
     margin: 20px 0;
     width: 100%;
+}
+.btn_flag{
+    display: inline-block;
+}
+.table_show{
+    border-spacing: 0;
+    margin-bottom: 20px;
+    width: 100%;
+}
+.table_show th,
+.table_show tr,
+.table_show td{
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+.table_show thead{
+    background-color: #eee;
+}
+.table_show.tS1 thead th:nth-child(1),
+.table_show.tS1 thead th:nth-child(4){
+    text-align: left;
+}
+.table_show.tS1 thead th:nth-child(2),
+.table_show.tS1 thead th:nth-child(3),
+.table_show.tS1 thead th:nth-child(5),
+.table_show.tS1 thead th:nth-child(6),
+.table_show.tS2 thead th:nth-child(2),
+.table_show.tS2 thead th:nth-child(3){
+    width: 70px;
+}
+.table_show.tS1 tbody tr td:nth-child(2),
+.table_show.tS1 tbody tr td:nth-child(3),
+.table_show.tS1 tbody tr td:nth-child(5),
+.table_show.tS1 tbody tr td:nth-child(6){
+    text-align: center;
+    padding-top: 25px;
+}
+.table_show.tS2 tbody tr td:nth-child(2),
+.table_show.tS2 tbody tr td:nth-child(3){
+    text-align: center;
+    padding-top: 25px;
+}
+
+#chooseFileDashedBox{
+    width: 150px;
+    height: 150px;
+    border: 4px dashed #777;
+    text-align: center;
+    font-weight: bold;
+    line-height: 155px;
+    cursor: pointer;
+    margin-bottom: 20px;
+}
+#chooseFileDashedBox label{
+    cursor: pointer;
+}
+
+#phoneChoose a{
+    color: #0b81f8;
+    text-decoration: none;
+    margin: 0 20px;
+}
+#phoneChoose a:hover,
+#phoneChoose a.active{
+    text-decoration: underline!important;
+}
+#reCaptCha{position: relative;}
+#reCaptCha img{cursor: pointer;}
+#reCaptCha input{
+    max-width: 200px;
+    position: absolute;
+    top: 10px;
+}
+
+#btnSubmit{
+    border-radius: 20px;
+    padding: 12px 18px;
+    background: #2ca01c;
+    border: 1px solid #2ca01c;
+    color: #fff;
+    cursor: pointer;
 }
 /* END STYLE */

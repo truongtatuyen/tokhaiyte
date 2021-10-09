@@ -6,8 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tờ Khai Y Tế</title>
     <link rel="stylesheet" href="./css/style.css">
-    <script src="./js/functions.js"></script>
-    <script src="./js/handles.js"></script>
 </head>
 <body>
     <h1 class="text-center" style="font-size: 36px;">Tờ khai y tế/Vietnam Health Declaration</h1>
@@ -19,57 +17,57 @@
             <label class="font-bold">Chọn ngôn ngữ để khai báo y tế /Select the language to declare health:</label>
             <ul class="flag_ul">
                 <li>
-                    <a class="active" href="javascript:void(0)">
+                    <a class="btn_flag active" href="javascript:void(0)">
                         <img src="src/images/vi-big.png" alt="VietNam">    
                     </a>
                 </li>
                 <li>
-                    <a href="javascript:void(0)">
+                    <a class="btn_flag" href="javascript:void(0)">
                         <img src="src/images/en-big.png" alt="England">    
                     </a>    
                 </li>
                 <li>
-                    <a href="javascript:void(0)">
+                    <a class="btn_flag" href="javascript:void(0)">
                         <img src="src/images/china-big.png" alt="China">    
                     </a>    
                 </li>
                 <li>
-                    <a href="javascript:void(0)">
+                    <a class="btn_flag" href="javascript:void(0)">
                         <img src="src/images/ko-big.png" alt="Korea">    
                     </a>    
                 </li>
                 <li>
-                    <a href="javascript:void(0)">
+                    <a class="btn_flag" href="javascript:void(0)">
                         <img src="src/images/it-big.png" alt="Italy">    
                     </a>    
                 </li>
                 <li>
-                    <a href="javascript:void(0)">
+                    <a class="btn_flag" href="javascript:void(0)">
                         <img src="src/images/cam-big.png" alt="Cambodia">    
                     </a>    
                 </li>
                 <li>
-                    <a href="javascript:void(0)">
+                    <a class="btn_flag" href="javascript:void(0)">
                         <img src="src/images/ru-big.png" alt="Russia">    
                     </a>    
                 </li>
                 <li>
-                    <a href="javascript:void(0)">
+                    <a class="btn_flag" href="javascript:void(0)">
                         <img src="src/images/es-big.png" alt="Spain">    
                     </a>    
                 </li>
                 <li>
-                    <a href="javascript:void(0)">
+                    <a class="btn_flag" href="javascript:void(0)">
                         <img src="src/images/fr-big.png" alt="France">    
                     </a>    
                 </li>
                 <li>
-                    <a href="javascript:void(0)">
+                    <a class="btn_flag" href="javascript:void(0)">
                         <img src="src/images/lo-big.png" alt="ThaiLand">    
                     </a>    
                 </li>
                 <li>
-                    <a href="javascript:void(0)">
+                    <a class="btn_flag" href="javascript:void(0)">
                         <img src="src/images/jp-big_63de0.png" alt="Japan">    
                     </a>    
                 </li>
@@ -400,7 +398,7 @@
                                 <option value="5657e3b77f8b9a117c8b59ae">Tây Lộc</option>
                                 <option value="5657e3b77f8b9a117c8b59af">Thuận Hòa</option>
                                 <option value="5657e3b77f8b9a117c8b59b0">Thuận Lộc</option>
-                                <option value="5657e3b67f8b9a117c8b596c">Thuận Thành</option>
+                                <option value="5657e3b67f8b9a117c8b596c">Đông Ba</option>
                                 <option value="5657e3b67f8b9a117c8b599a">Thủy Biều</option>
                                 <option value="603f6cf7b0b627b5af621b7d">Thuỷ Biều</option>
                                 <option value="5657e3b67f8b9a117c8b5999">Thủy Xuân</option>
@@ -467,7 +465,7 @@
                                 <option value="5657e3b77f8b9a117c8b59ae">Tây Lộc</option>
                                 <option value="5657e3b77f8b9a117c8b59af">Thuận Hòa</option>
                                 <option value="5657e3b77f8b9a117c8b59b0">Thuận Lộc</option>
-                                <option value="5657e3b67f8b9a117c8b596c">Thuận Thành</option>
+                                <option value="5657e3b67f8b9a117c8b596c">Đông Ba</option>
                                 <option value="5657e3b67f8b9a117c8b599a">Thủy Biều</option>
                                 <option value="603f6cf7b0b627b5af621b7d">Thuỷ Biều</option>
                                 <option value="5657e3b67f8b9a117c8b5999">Thủy Xuân</option>
@@ -627,9 +625,9 @@
                         <td colspan="6">
                             <input id="cscl1" type="radio" name="cscl"> <label for="cscl1">Cơ sở cách ly tập trung</label><br>
                             <input id="cscl2" type="radio" name="cscl"> <label for="cscl2">Cơ sở cách ly tự chọn</label><br>
-                            <input id="cscl3" type="radio" name="cscl" onclick="toggleTextbox()"> <label for="cscl3">Khác</label><br>
+                            <input id="cscl3" type="radio" name="cscl"> <label for="cscl3">Khác</label><br>
                             <!-- IF cscl3 -->
-                            <input id="cscl3_text" class="hidden" type="text" placeholder="Nhập cơ sở cách ly khác">
+                            <input id="cscl3_text" class="hidden" type="text" placeholder="Nhập cơ sở cách ly khác" style="max-width: 280px;">
                             <!-- END IF cscl3 -->
                         </td>
                     </tr>
@@ -641,13 +639,12 @@
                     <tr>
                         <td colspan="6">
                             <div style="width: 200px;">
-                                <div id="chooseFileDashedBox" style="width: 142px;height: 142px;border: 3px dashed #eee;">
+                                <div id="chooseFileDashedBox" onclick="document.getElementById('inputFileHidden').click()">
                                     <label>Chọn File</label>
-                                    <input type="file" multiple>                                
+                                    <input id="inputFileHidden" class="hidden" type="file" accept=".jpg,.gif,.png,.jpeg,.bmp,.webp,.heic,.ico,.xls,.doc,.rar,.zip,.7zip,.ppt,.xlsx,.docx,.pptx,.pdf,.txt,.html,.htm">                                
                                 </div>
                                 <div id="fileDate">
-                                    <input type="text" placeholder="Ngày xét nghiệm">
-                                    <input type="date">
+                                    <input type="text" placeholder="Ngày xét nghiệm" onfocus="(this.type='date')">
                                 </div>
                                 <div>
                                     <input type="checkbox" name="" id="isAT"> <label for="isAT">Xác nhận âm tính</label>
@@ -659,23 +656,24 @@
                         <td class="sub_title" colspan="6">
                             <b>Đăng ký sim sử dụng tại Việt Nam</b>
                             <span id="phoneChoose">
-                                <a href="javascript:void(0)">VIETTEL</a>
-                                <a href="javascript:void(0)">VINAPHONE</a>
-                                <a href="javascript:void(0)">MOBIPHONE</a>
+                                <a data-type="SIM" href="javascript:void(0)" title="Viettel">VIETTEL</a>
+                                <a data-type="SIM" href="javascript:void(0)" title="Vinaphone">VINAPHONE</a>
+                                <a data-type="SIM" href="javascript:void(0)" title="Mobiphone">MOBIPHONE</a>
                             </span>
                         </td>
                     </tr>
                     <tr>
                         <td colspan="6">
-                            <span id="reCaptCha">
-                                <img src="" alt="ReCaptCha">
+                            <label>Mã bảo mật <i class="color-red">(*)</i></label>
+                            <div id="reCaptCha">
+                                <img src="./src/images/reCaptCha.png" alt="ReCaptCha">
                                 <input type="text" placeholder="Nhập mã bảo mật tai đây">
-                            </span>
+                            </div>
                         </td>
                     </tr>
                     <tr>
                         <td colspan="6">
-                            <p class="color-red">Dữ liệu bạn cung cấp hoàn toàn bảo mật và chỉ phục vụ cho việc phòng chống dịch, thuộc quản lý của Ban chỉ đạo quốc gia về Phòng chống dịch Covid-19. Khi bạn nhấn nút "Gửi" là bạn đã hiểu và đồng ý.</p>
+                            <p class="color-red" style="line-height: 1.5;">Dữ liệu bạn cung cấp hoàn toàn bảo mật và chỉ phục vụ cho việc phòng chống dịch, thuộc quản lý của Ban chỉ đạo quốc gia về Phòng chống dịch Covid-19. Khi bạn nhấn nút "Gửi" là bạn đã hiểu và đồng ý.</p>
                         </td>
                     </tr>
                     <tr>
@@ -687,5 +685,10 @@
             </form>
         </div>
     </section>
+
 </body>
+<!-- JS Area -->
+<script src="./js/functions.js"></script>
+<script src="./js/handles.js"></script>
+<!-- JS Area -->
 </html>
